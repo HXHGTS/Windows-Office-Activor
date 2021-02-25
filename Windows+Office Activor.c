@@ -7,7 +7,7 @@ int run_mode;
 
 int main() {
 	p_1:system("cls");
-	printf("请选择运行模式：\n1.一键激活Windows（Windows10家庭版请先使用3转换版本）\n2.一键激活Office\n3.Windows10家庭版转VOL版\n4.激活状态查看\n请输入：");
+	printf("请选择运行模式：\n1.一键激活Windows（Windows10家庭版请先使用3转换版本）\n2.一键激活Office\n3.Windows10家庭版转VOL版\n4.激活状态查看\n5.退出\n请输入：");
 	scanf("%d", &run_mode);
 	if (run_mode == 1) {
 		Onekey_Windows();
@@ -26,7 +26,7 @@ int main() {
 		goto p_1;
 	}
 	else {
-		goto p_1;
+		exit(0);
 	}
 }
 
